@@ -1,0 +1,8 @@
+<div class="container mt-5">
+    <div class="card text-center" style="padding: 20px;">
+        <h1 >Select a Room in the Hotel</h1>
+        <div *ngFor="let r of rooms">
+            <button (click)="OnSelect(r.id)" class="btn btn-primary mb-2"> Room : {{r.number}}</button> 
+        </div>
+    </div>
+ </div>
